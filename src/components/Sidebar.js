@@ -9,12 +9,11 @@ export default function Sidebar() {
             <div className="bg-light border-right" id="sidebar-wrapper">
                 <div className="sidebar-heading">Start Bootstrap </div>
                 <div className="list-group list-group-flush">
-                    <a href="#" className="list-group-item list-group-item-action bg-light">Dashboard</a>
-                    <a href="#" className="list-group-item list-group-item-action bg-light">Shortcuts</a>
-                    <a href="#" className="list-group-item list-group-item-action bg-light">Overview</a>
-                    <a href="#" className="list-group-item list-group-item-action bg-light">Events</a>
-                    <a href="#" className="list-group-item list-group-item-action bg-light">Profile</a>
-                    <a href="#" className="list-group-item list-group-item-action bg-light">Status</a>
+                    <a href="#" className="list-group-item list-group-item-action bg-light">Inicio</a>
+                    <a href="#" className="list-group-item list-group-item-action bg-light">Stats por Universidad</a>
+                    <a href="#" className="list-group-item list-group-item-action bg-light">Clientes</a>
+                    <a href="#" className="list-group-item list-group-item-action bg-light">Luteachers</a>
+                    <a href="#" className="list-group-item list-group-item-action bg-light">Postulantes</a>
                 </div>
             </div>
         </div>

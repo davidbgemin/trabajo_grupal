@@ -1,45 +1,193 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.js'
+import '../assets/sidebar.css'
+
 
 
 export default function Content() {
     return (
         <div>
+            {/* Aquí va el contenido general */}
             <div className="container-fluid" id="contenido">
-                {/* Aquí va el contenido */}
-                <h1 className="mt-4">Simple Sidebar</h1>
-                <p>The starting state of the menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will change.</p>
-                <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit leo, luctus vitae ultricies id, scelerisque eget mauris. Duis nec quam eget tortor tincidunt pulvinar vel vitae mi. Sed mattis purus eu nulla ultrices tristique. Cras tempus turpis at neque porta volutpat. Maecenas vulputate nunc arcu, in pellentesque nulla faucibus non. Quisque volutpat vitae augue id fermentum. Nulla sit amet lectus in nisl vehicula consectetur ut ac justo. Proin ullamcorper ipsum at eleifend luctus. Mauris eget mi vestibulum, aliquam tortor at, dapibus velit. Phasellus eu lectus lacus. Nam finibus sed felis vehicula efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vitae tincidunt purus, a convallis lectus. In eget risus ligula. Curabitur aliquam lacus vitae consequat varius. Maecenas ut turpis eu neque maximus cursus.
+                <h1 className="mt-4">Estadísticas por Universidad</h1>
 
-Quisque fermentum orci ac blandit sodales. Nullam consequat hendrerit enim non dignissim. Sed placerat eget massa blandit sollicitudin. Donec sed vehicula nunc, consequat feugiat ante. Integer in urna mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec ultricies turpis. Duis quis aliquam neque. In et sapien leo. Praesent libero neque, tincidunt nec nunc a, facilisis placerat mi. Phasellus vel volutpat ipsum, at tempor dui.
+                {/* Botones */}
+                <div className="btn-group" role="group" aria-label="Basic outlined example">
+                    <button type="button" className="btn btn-outline-primary">Días</button>
+                    <button type="button" className="btn btn-outline-primary">Semanas</button>
+                    <button type="button" className="btn btn-outline-primary">Meses</button>
+                    <button type="button" className="btn btn-outline-primary">Semestre</button>
+                </div>
 
-Integer non sapien sed elit eleifend vehicula eget at nisi. Integer vulputate sodales nunc, quis vestibulum neque efficitur nec. Cras consequat velit eros. Cras tristique cursus cursus. Donec pulvinar orci nec nunc tincidunt luctus. Etiam tristique feugiat vulputate. Pellentesque ut arcu mattis, elementum eros id, condimentum lorem. Pellentesque ut consequat ex. Cras mi metus, accumsan accumsan mattis id, pretium nec purus. Curabitur aliquet posuere risus in volutpat. Quisque vel varius turpis. Duis sed blandit augue, sed eleifend ante.
+                {/* Gráficas */}
 
-Aliquam et purus nisi. Nullam congue tincidunt eros non tincidunt. Vestibulum eu ligula erat. Suspendisse luctus aliquet risus vel aliquet. Sed id accumsan justo, ut efficitur neque. Nunc sollicitudin vulputate augue, id aliquam tortor convallis eu. Nunc a mollis velit, volutpat maximus enim. Mauris nec tellus sed dolor accumsan tempus. Etiam tempus mauris at ligula condimentum consequat ac scelerisque turpis. Vivamus placerat sapien ut nulla malesuada, sed hendrerit nibh finibus. Nulla finibus volutpat risus, ut maximus sem ultrices pretium. Donec sodales, eros et iaculis facilisis, augue nisi tincidunt enim, imperdiet aliquam sapien velit ac magna. Morbi sodales aliquam commodo. Phasellus pharetra purus nec massa dignissim, vitae dictum magna tempor. Praesent eget metus eget lorem egestas mattis vel commodo odio.
+                {/* Tops */}
+                <div className="card-group mt-4">
+                    <div className="card border-secondary">
+                        <div className="card-header gaa">Cursos Top Vendidos</div>
+                        <div className="card-body text-secondary">
+                            <h5 className="card-title">Curso</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
 
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in dui id leo auctor ornare. Pellentesque aliquet purus eros, eu malesuada erat pulvinar non. In consequat turpis id erat pellentesque pharetra. Phasellus dapibus nunc vel sagittis tincidunt. Etiam pretium elit sagittis sapien commodo, vitae sollicitudin velit malesuada. Mauris vitae justo id nisi sagittis sollicitudin.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit leo, luctus vitae ultricies id, scelerisque eget mauris. Duis nec quam eget tortor tincidunt pulvinar vel vitae mi. Sed mattis purus eu nulla ultrices tristique. Cras tempus turpis at neque porta volutpat. Maecenas vulputate nunc arcu, in pellentesque nulla faucibus non. Quisque volutpat vitae augue id fermentum. Nulla sit amet lectus in nisl vehicula consectetur ut ac justo. Proin ullamcorper ipsum at eleifend luctus. Mauris eget mi vestibulum, aliquam tortor at, dapibus velit. Phasellus eu lectus lacus. Nam finibus sed felis vehicula efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vitae tincidunt purus, a convallis lectus. In eget risus ligula. Curabitur aliquam lacus vitae consequat varius. Maecenas ut turpis eu neque maximus cursus.
+                    <div className="card border-secondary">
+                        <div className="card-header gaa">Problemas</div>
+                        <div className="card-body text-secondary">
+                            <h5 className="card-title">Usuario</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
 
-Quisque fermentum orci ac blandit sodales. Nullam consequat hendrerit enim non dignissim. Sed placerat eget massa blandit sollicitudin. Donec sed vehicula nunc, consequat feugiat ante. Integer in urna mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec ultricies turpis. Duis quis aliquam neque. In et sapien leo. Praesent libero neque, tincidunt nec nunc a, facilisis placerat mi. Phasellus vel volutpat ipsum, at tempor dui.
+                    <div className="card border-secondary">
+                        <div className="card-header gaa">Productos Top</div>
+                        <div className="card-body text-secondary">
+                            <h5 className="card-title">Productos</h5>
+                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
 
-Integer non sapien sed elit eleifend vehicula eget at nisi. Integer vulputate sodales nunc, quis vestibulum neque efficitur nec. Cras consequat velit eros. Cras tristique cursus cursus. Donec pulvinar orci nec nunc tincidunt luctus. Etiam tristique feugiat vulputate. Pellentesque ut arcu mattis, elementum eros id, condimentum lorem. Pellentesque ut consequat ex. Cras mi metus, accumsan accumsan mattis id, pretium nec purus. Curabitur aliquet posuere risus in volutpat. Quisque vel varius turpis. Duis sed blandit augue, sed eleifend ante.
+                {/* Tabla cursos */}
+                <div className="card card-custom mt-4 mb-3">
+                    <div className="card-header border-0 pt-3">
+                        <h3 className="d-flex card-title align-items-start flex-column">
+                            <span className="card-label fw-bolder">Cursos Vendidos</span>
+                            <span># ventas</span>
+                        </h3>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary">Left</button>
+                            <button type="button" class="btn btn-secondary">Middle</button>
+                            <button type="button" class="btn btn-secondary">Right</button>
+                        </div>
 
-Aliquam et purus nisi. Nullam congue tincidunt eros non tincidunt. Vestibulum eu ligula erat. Suspendisse luctus aliquet risus vel aliquet. Sed id accumsan justo, ut efficitur neque. Nunc sollicitudin vulputate augue, id aliquam tortor convallis eu. Nunc a mollis velit, volutpat maximus enim. Mauris nec tellus sed dolor accumsan tempus. Etiam tempus mauris at ligula condimentum consequat ac scelerisque turpis. Vivamus placerat sapien ut nulla malesuada, sed hendrerit nibh finibus. Nulla finibus volutpat risus, ut maximus sem ultrices pretium. Donec sodales, eros et iaculis facilisis, augue nisi tincidunt enim, imperdiet aliquam sapien velit ac magna. Morbi sodales aliquam commodo. Phasellus pharetra purus nec massa dignissim, vitae dictum magna tempor. Praesent eget metus eget lorem egestas mattis vel commodo odio.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in dui id leo auctor ornare. Pellentesque aliquet purus eros, eu malesuada erat pulvinar non. In consequat turpis id erat pellentesque pharetra. Phasellus dapibus nunc vel sagittis tincidunt. Etiam pretium elit sagittis sapien commodo, vitae sollicitudin velit malesuada. Mauris vitae justo id nisi sagittis sollicitudin.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit leo, luctus vitae ultricies id, scelerisque eget mauris. Duis nec quam eget tortor tincidunt pulvinar vel vitae mi. Sed mattis purus eu nulla ultrices tristique. Cras tempus turpis at neque porta volutpat. Maecenas vulputate nunc arcu, in pellentesque nulla faucibus non. Quisque volutpat vitae augue id fermentum. Nulla sit amet lectus in nisl vehicula consectetur ut ac justo. Proin ullamcorper ipsum at eleifend luctus. Mauris eget mi vestibulum, aliquam tortor at, dapibus velit. Phasellus eu lectus lacus. Nam finibus sed felis vehicula efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vitae tincidunt purus, a convallis lectus. In eget risus ligula. Curabitur aliquam lacus vitae consequat varius. Maecenas ut turpis eu neque maximus cursus.
-
-Quisque fermentum orci ac blandit sodales. Nullam consequat hendrerit enim non dignissim. Sed placerat eget massa blandit sollicitudin. Donec sed vehicula nunc, consequat feugiat ante. Integer in urna mauris. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec ultricies turpis. Duis quis aliquam neque. In et sapien leo. Praesent libero neque, tincidunt nec nunc a, facilisis placerat mi. Phasellus vel volutpat ipsum, at tempor dui.
-
-Integer non sapien sed elit eleifend vehicula eget at nisi. Integer vulputate sodales nunc, quis vestibulum neque efficitur nec. Cras consequat velit eros. Cras tristique cursus cursus. Donec pulvinar orci nec nunc tincidunt luctus. Etiam tristique feugiat vulputate. Pellentesque ut arcu mattis, elementum eros id, condimentum lorem. Pellentesque ut consequat ex. Cras mi metus, accumsan accumsan mattis id, pretium nec purus. Curabitur aliquet posuere risus in volutpat. Quisque vel varius turpis. Duis sed blandit augue, sed eleifend ante.
-
-Aliquam et purus nisi. Nullam congue tincidunt eros non tincidunt. Vestibulum eu ligula erat. Suspendisse luctus aliquet risus vel aliquet. Sed id accumsan justo, ut efficitur neque. Nunc sollicitudin vulputate augue, id aliquam tortor convallis eu. Nunc a mollis velit, volutpat maximus enim. Mauris nec tellus sed dolor accumsan tempus. Etiam tempus mauris at ligula condimentum consequat ac scelerisque turpis. Vivamus placerat sapien ut nulla malesuada, sed hendrerit nibh finibus. Nulla finibus volutpat risus, ut maximus sem ultrices pretium. Donec sodales, eros et iaculis facilisis, augue nisi tincidunt enim, imperdiet aliquam sapien velit ac magna. Morbi sodales aliquam commodo. Phasellus pharetra purus nec massa dignissim, vitae dictum magna tempor. Praesent eget metus eget lorem egestas mattis vel commodo odio.
-
-Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vestibulum in dui id leo auctor ornare. Pellentesque aliquet purus eros, eu malesuada erat pulvinar non. In consequat turpis id erat pellentesque pharetra. Phasellus dapibus nunc vel sagittis tincidunt. Etiam pretium elit sagittis sapien commodo, vitae sollicitudin velit malesuada. Mauris vitae justo id nisi sagittis sollicitudin.
-                </p>
+                    </div>
+                    <div className="card-body">
+                        <div className="tab-content">
+                            <div className="tab-pane fade show active" id="dia" role="tabpanel">
+                                <div className="table-responsive-md">
+                                    <table className="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Cursos</th>
+                                                <th scope="col">Individuales</th>
+                                                <th scope="col">Grupales</th>
+                                                <th scope="col">Ingresos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Mate 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Quimica</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ICC</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fisica 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div className="tab-pane fade" id="mes" role="tabpanel">
+                                <div className="table-responsive">
+                                    <table className="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Cursos</th>
+                                                <th scope="col">Individuales</th>
+                                                <th scope="col">Grupales</th>
+                                                <th scope="col">Ingresos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Mate 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Quimica</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ICC</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fisica 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div className="tab-pane fade" id="ciclo" role="tabpanel">
+                                <div className="table-responsive">
+                                    <table className="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Cursos</th>
+                                                <th scope="col">Individuales</th>
+                                                <th scope="col">Grupales</th>
+                                                <th scope="col">Ingresos</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Mate 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Quimica</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>ICC</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fisica 1</th>
+                                                <td>10</td>
+                                                <td>5</td>
+                                                <td>S/.1200</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )
