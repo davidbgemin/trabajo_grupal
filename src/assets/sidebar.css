@@ -38,9 +38,9 @@
     margin-left: 0;
   }
 
-  .toggle {
+/*   .toggle {
     display: none;
-  }
+  } */
 
   #page-content-wrapper {
     min-width: 0;
@@ -52,4 +52,6 @@
   }
 }
 
-
+.barra {
+  height: 250px !important;
+}
